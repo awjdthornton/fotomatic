@@ -39,6 +39,7 @@ html {
 header {
   position: fixed;
   width: 100%;
+  z-index: 20;
   border-bottom: solid 1px #c6c1c1;
   background-color: white;
 }
@@ -117,6 +118,7 @@ header .mobile {
   justify-content: flex-start;
   align-items: flex-start;
   height: 43.5rem;
+  background-image: url("../images/banner-landingpage.jpg");
 }
 
 #sign-up-cta {
@@ -124,6 +126,7 @@ header .mobile {
   border: solid 1px #979797;
   border-radius: 4px;
   background-color: #9dc20b;
+  margin: 170px 100px;
 }
 
 #sign-up-cta .content {
@@ -227,6 +230,14 @@ header .mobile {
   width: 90%;
   height: 65%;
   margin: 0 auto;
+}
+
+.center .image-container img {
+  max-width: 100%;
+}
+
+.feature .content {
+  padding: 40px 0;
 }
 
 .feature h2 {
