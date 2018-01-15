@@ -3,6 +3,7 @@
 html {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
+  min-width: 230px;
 }
 
 .main-content {
@@ -26,6 +27,7 @@ html {
 
 .image-container img {
   display: block;
+  max-width: 100%;
 }
 
 @media only screen and (max-width: 760px) {
@@ -130,7 +132,7 @@ header .mobile {
 }
 
 #sign-up-cta .content {
-  width: 25.625rem;
+  max-width: 25.625rem;
   margin-top: 2rem;
   font-family: "Roboto", sans-serif;
   font-size: 1.25rem;
@@ -177,6 +179,7 @@ header .mobile {
     height: auto;
     background-color: transparent;
     border: none;
+    padding: 0;
   }
 
   #sign-up-cta .content {
@@ -230,10 +233,6 @@ header .mobile {
   width: 90%;
   height: 65%;
   margin: 0 auto;
-}
-
-.center .image-container img {
-  max-width: 100%;
 }
 
 .feature .content {
@@ -307,7 +306,9 @@ header .mobile {
 #filters-section .images-container {
   max-width: 100%;
   padding: 0 1%;
+  display: flex;
 }
+
 
 @media only screen and (max-width: 760px) {
   #filters-section {
@@ -345,11 +346,11 @@ header .mobile {
   background-color: #f3f3f3;
 }
 
-#quotes-section content {
+#quotes-section .content {
   padding: 5rem 0;
 }
 
-#quotes-section quote {
+#quotes-section .quote {
   padding-right: 1.875rem;
   font-family: "Palatino", serif;
   font-size: 1.875rem;
@@ -358,12 +359,12 @@ header .mobile {
   color: #4a4a4a;
 }
 
-#quotes-section quote-citation {
+#quotes-section .quote-citation {
   height: 1.875rem;
 }
 
 @media only screen and (max-width: 760px) {
-  #quotes-section content {
+  #quotes-section .content {
     padding: 1.875rem .625rem;
   }
 
@@ -372,7 +373,7 @@ header .mobile {
     line-height: 1.4;
   }
 
-  #quotes-section quote-citation {
+  #quotes-section .quote-citation {
     display: block;
     padding-top: 1rem;
     margin: auto;
